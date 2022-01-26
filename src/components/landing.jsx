@@ -13,15 +13,15 @@ export default class landing extends Component{
 <div className='LandHeader'>
 
     
-<h4>Welcome To Our Admin System</h4>
-<p className='nameP'>Hi, Bella</p>
+<h4 style={{color:'#0B156F'}}>Welcome To Our Admin System</h4>
+<p className='nameP' style={{color:'#0B156F'}}>Hi, Bella</p>
 <img classNmae='imageP' src={pin3} alt="this is car image" style={{ width:50,height:50, borderRadius:50}} />
 
 
 
 </div>
 <div className='LandBody'>
-                <h1 style={{color:'#0B156F'}}>Reports</h1>
+                <h1 style={{color:'#666666'}}>Reports</h1>
 
 <div className='LandInside'>
 

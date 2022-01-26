@@ -6,7 +6,7 @@ const notifications = () => {
         <>
         <h1>About Page</h1>
 
-        <form className="d-flex">
+        <form >
         <input className="form-control me-2" type="search" placeholder='Search' aria-label='Search'/>
     </form>
         </>
