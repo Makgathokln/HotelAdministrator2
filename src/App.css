@@ -235,10 +235,9 @@ borderWidth: 3; */
     }
     
     .btn-light {
-        background-color: #0B156F;
-        color: #0B156F;
+        background-color: #0B156F !important;
+        color: #fff !important;
         width: 140px;
-        background-color: #8064A2 !important;
     }
     
     .button {

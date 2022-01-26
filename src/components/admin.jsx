@@ -106,8 +106,8 @@ marginTop:10,  }} />
 </div>
 
 <div className='button'>
-<button type="button" className="btn btn-light">Light</button>
-<button type="button" className="btn btn-light">Light</button>
+<button type="button" className="btn btn-light">Add</button>
+<button type="button" className="btn btn-light">Clear</button>
 
 </div>
 
