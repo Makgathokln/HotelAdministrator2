@@ -3,8 +3,10 @@ import Menu from './menu';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import pin3 from "../images/pin3.jpg";
 import guest from '../const/guests';
+
+
 const guests = () => {
-    
+
     return(
         <>
         
@@ -31,10 +33,13 @@ const guests = () => {
 
             <div className='box'>
                 <div className='image'>
-
+                    {guest.name}
                 </div>
 
                 <div className='details'>
+                {guest.name}
+                {guest.name}
+                {guest.name}
 
                 </div>
             </div>
