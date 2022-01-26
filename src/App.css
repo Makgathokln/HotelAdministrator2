@@ -200,10 +200,50 @@ borderWidth: 3; */
     }
     
     .box {
-        border-radius: 20px;
-        height: 180px;
+        border-radius: 10px;
+        height: 130px;
         width: 380px;
         margin-left: 50px;
         box-shadow: 0 0 5px #444;
-        margin-top: 60px;
+        margin-top: 20px;
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .gueDetails {
+        margin-left: 20px;
+        margin-top: 10px;
+    }
+    
+    .details {
+        font-size: 14px;
+        font-weight: 500;
+        color: #666666;
+    }
+    
+    .nav-tabs {
+        margin-left: 20px;
+    }
+    
+    .formAdmin {
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+    
+    .row {
+        margin-top: 20px;
+    }
+    
+    .btn-light {
+        background-color: #0B156F;
+        color: #0B156F;
+        width: 140px;
+        background-color: #8064A2 !important;
+    }
+    
+    .button {
+        color: #0B156F;
+        margin-top: 20px;
+        display: flex;
+        flex-direction: row;
     }
