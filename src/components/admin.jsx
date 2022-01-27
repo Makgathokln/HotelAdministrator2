@@ -1,17 +1,29 @@
-import React, {Component} from 'react';
+import React, {useState,} from 'react';
 import Menu from './menu';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import profA from "../images/profA.jpeg";
 import guest from '../const/guests';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCoffee, faHome,faBell, faUser, faBed, faUsers, faFolder,faUserPlus } from '@fortawesome/free-solid-svg-icons';
+import { BrowserRouter as Router, Routes, Link, Route ,useLocation,useParams} from "react-router-dom";
+import firebase from '../firebase';
 
-const admin = () => {
+const Admin = () => {
+  const values= {
+    firstName: "",
+    lastName: "",
+    emailAddress:"",
+    password:"",
+    contactNumber:"",
 
+  };
+
+  const [initialSate, setState] = useState(values);
+  const{firstName, lastName, emailAddress, password, contactNumber} = initialSate;
 return(
     <>
         
-        <div className='form-group'>
+        <div className='container'>
          <div className='gueHeader' >
 
         <input className="form-control" 
@@ -37,11 +49,11 @@ marginTop:10,  }} />
 
             <ul class="nav nav-tabs">
   <li class="nav-item">
-    <a class="nav-link active" aria-current="page" href="#">Add</a>
+    <a className="nav-link active" aria-current="page" href="#">Add</a>
     
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="#">View</a>
+  <Link to='/roomView' className="nav-link">View</Link>
   </li>
   
 </ul>
@@ -90,7 +102,7 @@ marginTop:10,  }} />
     </div>
   </div>
 
-<div className='button justify-content-center align-items-center' style={{marginLeft:240}}>
+<div className='button justify-content-center align-items-center' style={{marginLeft:250}}>
 <button type="ml-15 button" className="btn btn-light">Add</button>
 <button type="button" className="btn btn-light">Clear</button>
 
@@ -101,4 +113,4 @@ marginTop:10,  }} />
         </>
     )
 }
-export default admin
+export default Admin
