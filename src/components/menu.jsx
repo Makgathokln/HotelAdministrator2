@@ -9,6 +9,8 @@ import Guests from './guests';
 import Notifications from './notifications';
 import Rooms from './rooms';
 import About from "./about";
+import AdminView from "./adminView";
+import RoomView from "./roomView";
 // import SignIn from "./signIn"
 import Menu from "./menu";
 import pin3 from "../images/pin3.jpg";
@@ -24,10 +26,12 @@ const menu = () => {
             <Route path="/about" element={<About />} />
             <Route path="/bookings" element={<Bookings />} />
 
-           <Route path="/guests" element={<Guests />} />
+        <Route path="/guests" element={<Guests />} />
         <Route path="/admin" element={<Admin/>} />
         <Route path="/notifications" element={<Notifications/>} /> 
         <Route path="/rooms" element={<Rooms/>} /> 
+        <Route path="/adminView" element={<AdminView/>} /> 
+        <Route path="/roomView" element={<RoomView/>} /> 
 
           </Routes>
         </div>
