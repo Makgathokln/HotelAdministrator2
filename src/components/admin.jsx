@@ -50,62 +50,47 @@ marginTop:10,  }} />
 
         <div className='formAdmin'>
         
-        <div className="row g-3 align-items-center" style={{paddingTop:20, marginLeft:20}}>
-  <div className="col-auto">
-    <label for="inputPassword6" class="col-form-label">First Name</label>
-  </div>
-  <div className="col-auto">
-    <input type="password" id="inputPassword6" className="form-control" aria-describedby="passwordHelpInline"/>
-  </div>
-  <div className="col-auto">
-  </div>
-</div>
+      
 
-<div className="row g-3 mb-8" style={{paddingTop:20, marginLeft:20}}>
-  <div className="col-auto">
-    <label for="inputPassword6" class="col-form-label">Last Name</label>
+<div class="mb-3 row justify-content-center align-items-center">
+    <label for="staticEmail" class="col-sm-2 col-form-label">First Name</label>
+    <div class="col-sm-3">
+    <input type="text" class="form-control" id="inputPassword" />
+    </div>
   </div>
-  <div className="col-auto" >
-    <input type="password" id="inputPassword6" className="form-control" aria-describedby="passwordHelpInline"/>
-  </div>
-  <div className="col-auto">
-  </div>
-</div>
+  
 
-<div className="row g-3 mb-8" style={{paddingTop:20, marginLeft:20}}>
-  <div className="col-auto">
-    <label for="inputPassword6" class="col-form-label">Email Address</label>
+  <div class="mb-3 row justify-content-center align-items-center">
+    <label for="lastName" class="col-sm-2 col-form-label">Last Name</label>
+    <div class="col-sm-3">
+    <input type="text" class="form-control" id="inputLastName" />
+    </div>
   </div>
-  <div className="col-auto" >
-    <input type="password" id="inputPassword6" className="form-control" aria-describedby="passwordHelpInline"/>
-  </div>
-  <div className="col-auto">
-  </div>
-</div>
 
-<div className="row g-3 mb-8" style={{paddingTop:20, marginLeft:20}}>
-  <div className="col-auto">
-    <label for="inputPassword6" class="col-form-label">Contact Number</label>
+  <div class="mb-3 row justify-content-center align-items-center">
+    <label for="emailAddress" class="col-sm-2 col-form-label">Email Address</label>
+    <div class="col-sm-3">
+    <input type="password" class="form-control" id="inputPassword" />
+    </div>
   </div>
-  <div className="col-auto" >
-    <input type="password" id="inputPassword6" className="form-control" aria-describedby="passwordHelpInline"/>
-  </div>
-  <div className="col-auto">
-  </div>
-</div>
 
-<div className="row g-3 mb-8" style={{paddingTop:20, marginLeft:20}}>
-  <div className="col-auto">
-    <label for="inputPassword6" class="col-form-label">Password</label>
-  </div>
-  <div className="col-auto" >
-    <input type="password" id="inputPassword6" className="form-control" aria-describedby="passwordHelpInline"/>
-  </div>
-  <div className="col-auto">
-  </div>
-</div>
+  
 
-<div className='button'>
+  <div class="mb-3 row justify-content-center align-items-center">
+    <label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
+    <div class="col-sm-3">
+      <input type="text" class="form-control" id="inputPassword" />
+    </div>
+  </div>
+
+  <div class="mb-3 row justify-content-center align-items-center">
+    <label for="contactNumber" class="col-sm-2 col-form-label">Contact Number</label>
+    <div class="col-sm-3" >
+    <input type="password" class="form-control" id="inputPassword" />
+    </div>
+  </div>
+
+<div className='button justify-content-center align-items-center'>
 <button type="button" className="btn btn-light">Add</button>
 <button type="button" className="btn btn-light">Clear</button>
 
