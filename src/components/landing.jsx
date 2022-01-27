@@ -3,6 +3,7 @@ import Menu from './menu';
 import '../App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import pin3 from "../images/pin3.jpg";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 
 export default class landing extends Component{

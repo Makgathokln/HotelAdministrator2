@@ -3,7 +3,8 @@ import Menu from './menu';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import profA from "../images/profA.jpeg";
 import guest from '../const/guests';
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCoffee, faHome,faBell, faUser, faBed, faUsers, faFolder,faUserPlus } from '@fortawesome/free-solid-svg-icons';
 
 const admin = () => {
 
@@ -50,7 +51,7 @@ marginTop:10,  }} />
 
         <div className='formAdmin'>
         
-      
+       
 
 <div class="mb-3 row justify-content-center align-items-center">
     <label for="staticEmail" class="col-sm-2 col-form-label">First Name</label>
@@ -59,7 +60,6 @@ marginTop:10,  }} />
     </div>
   </div>
   
-
   <div class="mb-3 row justify-content-center align-items-center">
     <label for="lastName" class="col-sm-2 col-form-label">Last Name</label>
     <div class="col-sm-3">
@@ -90,8 +90,8 @@ marginTop:10,  }} />
     </div>
   </div>
 
-<div className='button justify-content-center align-items-center'>
-<button type="button" className="btn btn-light">Add</button>
+<div className='button justify-content-center align-items-center' style={{marginLeft:240}}>
+<button type="ml-15 button" className="btn btn-light">Add</button>
 <button type="button" className="btn btn-light">Clear</button>
 
 </div>
