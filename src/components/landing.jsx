@@ -16,7 +16,7 @@ export default class landing extends Component{
     
 <h4 style={{color:'#0B156F'}}>Welcome To Our Admin System</h4>
 <p className='nameP' style={{color:'#0B156F'}}>Hi, Bella</p>
-<img classNmae='imageP' src={pin3} alt="this is car image" style={{ width:50,height:50, borderRadius:50}} />
+<img className='imageP' src={pin3} alt="this is car image" style={{ width:50,height:50, borderRadius:50}} />
 
 
 
