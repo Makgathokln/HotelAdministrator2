@@ -16,7 +16,7 @@ return(
         <div className='gueHeader' >
 
         <input className="form-control" 
-        style={{width:800, height:40, 
+        style={{width:600, height:40, 
         borderRadius:10, marginTop:20, marginLeft:20,  border:'2px solid #FF8038',}}
          type="search" placeholder='Search' aria-label='Search'/>
          
@@ -30,7 +30,7 @@ marginTop:10,  }} />
 
         <div className='gueBody'>
            <div className='gueBodyA'> 
-           <h3>Admin</h3>
+           <h3>Rooms</h3>
             
             </div>
            
@@ -38,7 +38,7 @@ marginTop:10,  }} />
 
             <ul class="nav nav-tabs">
   <li class="nav-item">
-  <Link to='/admin' className="nav-link">Add</Link>
+  <Link to='/rooms' className="nav-link">Add</Link>
     
   </li>
   <li class="nav-item">
@@ -54,55 +54,55 @@ marginTop:10,  }} />
         
        
 
-    <table class="table table-bordered" style={{marginLeft:20, width:1150}}>
+    <table class="table table-bordered" style={{marginLeft:20, width:900, justifyContent:'center', alignContent:'center'}}>
     <thead>
       <tr>
-        <th style={{width:120}}>First Name</th>
-        <th style={{width:120}}>Last Name</th>
-        <th style={{width:120}}>Email Address</th>
-        <th style={{width:120}}>Password</th>
-        <th style={{width:120}}>Contact Number</th>
-        <th style={{width:200}}>Action</th>
+        <th style={{width:100}}> Room Type</th>
+        <th style={{width:100}}> No.Of Beds</th>
+        <th style={{width:100}}>Room No. </th>
+        <th style={{width:100}}>Price</th>
+        <th style={{width:180}}>Action</th>
 
       </tr>
     </thead>
     <tbody>
       <tr >
-        <td>John</td>
-        <td>Doe</td>
-        <td>john@example.com</td>
-        <td>John</td>
-        <td>Doe</td>
+        <td>Executive Suite</td>
+        <td>1</td>
+        <td>Room 15</td>
+        <td>R2500</td>
+
         <td>
      
-<button type="button" className="btn btn-light" style={{width:70, marginLeft:10}}>View</button>
-<button type="button" className="btn btn-light" style={{width:70, marginLeft:10}}>Edit</button>
-<button type="button" className="btn btn-light" style={{width:70, marginLeft:10}}>Delete</button>
+        <button type="button" className="btn btn-lightd" style={{width:70, marginLeft:10, color:'#fff', backgroundColor:'#99ff99'}}>View</button>
+        <button type="button" className="btn btn-lightd" style={{width:70, marginLeft:10,color:'#fff', backgroundColor:'#ffe066'}}>Edit</button>
+        <button type="button" className="btn btn-lightd" style={{width:70, marginLeft:10, color:'#fff',backgroundColor:'#ff6666'}}>Delete</button>
 
 
         </td>
       </tr>
       <tr>
-        <td>Mary</td>
-        <td>Moe</td>
-        <td>mary@example.com</td>
-        <td>John</td>
-        <td>Doe</td>
+        <td>Standard Suite</td>
+        <td>2</td>
+        <td>Room 5</td>
+        <td>R2100</td>
+
         <td>
      
-<button type="button" className="btn btn-light" style={{width:70, marginLeft:10}}>View</button>
-<button type="button" className="btn btn-light" style={{width:70, marginLeft:10}}>Edit</button>
-<button type="button" className="btn btn-light" style={{width:70, marginLeft:10}}>Delete</button>
+        <button type="button" className="btn btn-lightd" style={{width:70, marginLeft:10, color:'#fff', backgroundColor:'#99ff99'}}>View</button>
+        <button type="button" className="btn btn-lightd" style={{width:70, marginLeft:10,color:'#fff', backgroundColor:'#ffe066'}}>Edit</button>
+        <button type="button" className="btn btn-lightd" style={{width:70, marginLeft:10, color:'#fff',backgroundColor:'#ff6666'}}>Delete</button>
 
 
         </td>
       </tr>
       <tr>
-        <td>July</td>
-        <td>Dooley</td>
-        <td>july@example.com</td>
-        <td>John</td>
-        <td>Doe</td>
+        <td>Junior Suite</td>
+        <td>1</td>
+        <td>Room 7</td>
+
+        <td>R1800</td>
+       
 
         <td>
      

@@ -58,12 +58,12 @@ return(
          <div className='gueHeader' >
 
         <input className="form-control" 
-        style={{width:800, height:40, 
+        style={{width:600, height:40, 
         borderRadius:10, marginTop:20, marginLeft:20,  border:'2px solid #FF8038',}}
          type="search" placeholder='Search' aria-label='Search'/>
          
         
-<p className='nameP' style={{color:'#0B156F',paddingLeft:200, marginTop:20, fontWeight:'bold'}}>Hi, Bella</p>
+         <p className='nameP' style={{color:'#0B156F',paddingLeft:200, marginTop:20, fontWeight:'bold'}}>Hi, Bella</p>
 <img className='imageP' src={profA} alt="this is car image" 
 style={{ width:50,height:50, borderRadius:10,marginLeft:140, 
 marginTop:10,  }} />
@@ -84,7 +84,7 @@ marginTop:10,  }} />
     
   </li>
   <li class="nav-item">
-  <Link to='/roomView' className="nav-link">View</Link>
+  <Link to='/adminView' className="nav-link">View</Link>
   </li>
   
 </ul>

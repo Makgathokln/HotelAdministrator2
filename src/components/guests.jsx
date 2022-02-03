@@ -13,8 +13,8 @@ return(
         <div className='form-group'>
          <div className='gueHeader' >
 
-        <input className="form-control" 
-        style={{width:800, height:40, 
+         <input className="form-control" 
+        style={{width:600, height:40, 
         borderRadius:10, marginTop:20, marginLeft:20,  border:'2px solid #FF8038',}}
          type="search" placeholder='Search' aria-label='Search'/>
          
@@ -35,8 +35,8 @@ marginTop:10,  }} />
 {
     guest.map((item)=>
     
-
-            <div className='box'>
+            <div className="box-container">
+                 <div className='box'>
                 <div className='image'>
                 <img className='imageP' src={profA} alt="this is car image" 
                 style={{ width:110,height:110, borderRadius:5,marginTop:10, marginLeft:10  }} />
@@ -58,6 +58,8 @@ marginTop:10,  }} />
 
                 
                 </div>
+            </div>
+           
             </div>
                 )
             }

@@ -230,6 +230,10 @@ borderWidth: 3; */
 
 .formAdmin {
     margin-top: 40px;
+    display: flex;
+    justify-items: center;
+    justify-self: center;
+    align-content: center;
 }
 
 .row {
@@ -252,3 +256,12 @@ borderWidth: 3; */
 .td {
     width: 150px;
 }
+
+.table {
+    margin: auto;
+ }
+
+ .box-container{
+     display: flex;
+     flex-direction: row;
+ }

@@ -25,15 +25,16 @@ return (
     style={{width: 250}}> 
         <img src={pin3} alt="this is car image" style={{ height:'25%'}} />
     
-        <hr/>
-        <ul class="nav nav-pills flex-column mb-auto">
+<h3 style={{marginTop:20}}>Hotel Admin</h3>    
+
+    <ul class="nav nav-pills flex-column mb-auto">
             <li class="nav-item"> 
             
             <Link to="/" class={`nav-link ${path==='/'?'active':'text-white'}`} aria-current="page"> 
             <FontAwesomeIcon icon={faHome} /><span class="ms-2">Home</span> </Link> </li>
             
             
-             <li> <Link to="/about" class={`nav-link ${path==='/about'?'active':'text-white'}`}>
+             <li> <Link to="/bookings" class={`nav-link ${path==='/bookings'?'active':'text-white'}`}>
              <FontAwesomeIcon icon={faFolder} /><span class="ms-2">Bookings</span> </Link> </li>
            
            
@@ -41,10 +42,10 @@ return (
             <FontAwesomeIcon icon={faUsers} />
             <span class="ms-2">Guests</span> </Link> </li>
             
-            <li> <Link to='/rooms' class={`nav-link ${path==='/room'?'active':'text-white'}`}>
+            <li> <Link to='/rooms' class={`nav-link ${path==='/rooms'?'active':'text-white'}`}>
             <FontAwesomeIcon icon={faBed} /><span class="ms-2">Manage Rooms</span> </Link> </li> 
             
-            <li> <Link to="/notifications" class={`nav-link ${path==='/notification'?'active':'text-white'}`}> 
+            <li> <Link to="/notifications" class={`nav-link ${path==='/notifications'?'active':'text-white'}`}> 
             
             <FontAwesomeIcon icon={faBell} /><span class="ms-2">Notifications</span></Link> </li> 
     

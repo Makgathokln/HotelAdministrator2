@@ -1,36 +1,35 @@
-const guest = [
+const notification = [
     {
         id:'1',
         name:'Thapelo Chaba',
         type:'Executive Suite',
-        checkIn:'Check-In: 15-04-2022',
-        checkOut:'Check-Out: 17-04-2022',
+        checkIn:'15-04-2022',
+        checkOut:'17-04-2022',
         price:'R6500',
+        roomNo:'Room 1',
         image:require("../images/flo.jpg")
-
-
-
     },
 
     {
         id:'2',
-        name:'Thapelo Chaba',
+        name:'Elizabeth Wayne',
         type:'Junior Suite',
-        checkIn:'Check-In: 23-04-2022',
-        checkOut:'Check-Out: 24-04-2022',
+        checkIn:' 23-04-2022',
+        checkOut:'24-04-2022',
         price:'R2100',
-        image:require("../images/flo.jpg")
-
+        roomNo:'Room 2',
 
     },
 
     {
         id:'3',
-        name:'Thapelo Chaba',
+        name:'Andries Smith',
         type:'Standard Suite',
-        checkIn:'Check-In: 23-04-2022',
-        checkOut:'Check-Out: 24-04-2022',
+        checkIn:'23-04-2022',
+        checkOut:'24-04-2022',
         price:'R6500',
+        roomNo:'Room 15',
+
         image:require("../images/flo.jpg")
 
 
@@ -62,4 +61,4 @@ const guest = [
 
 ]
 
-export default guest;
+export default notification;
