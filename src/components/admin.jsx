@@ -9,44 +9,44 @@ import { BrowserRouter as
    Router, Routes,
    Link, Route ,
    useHistory,useParams} from "react-router-dom";
-import firebaseDb from '../firebase';
+//import firebaseDb from '../firebase';
 // import firebase from '../firebase';
 
 const Admin = () => {
  
-  const values= {
-    firstName: "",
-    lastName: "",
-    emailAddress:"",
-    password:"",
-    contactNumber:"",
+  // const values= {
+  //   firstName: "",
+  //   lastName: "",
+  //   emailAddress:"",
+  //   password:"",
+  //   contactNumber:"",
 
-  };
+  // };
 
-  const [initialState, setState] = useState(values);
-  const { firstName, lastName, emailAddress, password, contactNumber } = initialState;
-  const history = useHistory();
+  // const [initialState, setState] = useState(values);
+  // const { firstName, lastName, emailAddress, password, contactNumber } = initialState;
+  // const history = useHistory();
 
 
-  const handleInputChange = (e) => {
-      let {firstName, value} = e.target;
-      setState({
+  // const handleInputChange = (e) => {
+  //     let {firstName, value} = e.target;
+  //     setState({
 
-        initialState,
-        [firstName]: value,
-      })
-  };
+  //       initialState,
+  //       [firstName]: value,
+  //     })
+  // };
 
-  const handleSubmit = (e) => {
+  // const handleSubmit = (e) => {
 
-    e.preventDefault();
-    firebaseDb.child("hotel").push(initialState, (err) =>{
-      if(err) {
-        console.log(err);
-      }
-    });
-    history.push("/");
-  };
+  //   e.preventDefault();
+  //   firebaseDb.child("hotel").push(initialState, (err) =>{
+  //     if(err) {
+  //       console.log(err);
+  //     }
+  //   });
+  //   history.push("/");
+  // };
 
 
 return(
@@ -54,7 +54,7 @@ return(
         
         <div className='container'>
 
-          <form onSubmit={handleSubmit}>
+          <form >
          <div className='gueHeader' >
 
         <input className="form-control" 
@@ -99,7 +99,7 @@ marginTop:10,  }} />
 <div class="mb-3 row justify-content-center align-items-center">
     <label for="staticEmail" class="col-sm-2 col-form-label">First Name</label>
     <div class="col-sm-3">
-    <input type="text" value={firstName} name="firstName" className="form-control" onChange={handleInputChange}
+    <input type="text"  name="firstName" className="form-control" 
      class="form-control" id="inputFirstName" />
     </div>
   </div>
@@ -107,7 +107,7 @@ marginTop:10,  }} />
   <div class="mb-3 row justify-content-center align-items-center">
     <label for="lastName" class="col-sm-2 col-form-label">Last Name</label>
     <div class="col-sm-3">
-    <input type="text" value={lastName} name="lastName"  onChange={handleInputChange}
+    <input type="text"  name="lastName" 
     className="form-control" id="inputLastName" />
     </div>
   </div>
@@ -115,7 +115,7 @@ marginTop:10,  }} />
   <div class="mb-3 row justify-content-center align-items-center">
     <label for="emailAddress" class="col-sm-2 col-form-label">Email Address</label>
     <div class="col-sm-3">
-    <input type="email" value={emailAddress} name="emailAddress" onChange={handleInputChange} className="form-control" id="inputPassword" />
+    <input type="email"  name="emailAddress"  className="form-control" id="inputPassword" />
     </div>
   </div>
 
@@ -124,14 +124,14 @@ marginTop:10,  }} />
   <div class="mb-3 row justify-content-center align-items-center">
     <label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
     <div class="col-sm-3">
-      <input type="password" value={password} name="password" onChange={handleInputChange} className="form-control" id="inputPassword" />
+      <input type="password"  name="password"  className="form-control" id="inputPassword" />
     </div>
   </div>
 
   <div class="mb-3 row justify-content-center align-items-center">
     <label for="contactNumber" class="col-sm-2 col-form-label">Contact Number</label>
     <div class="col-sm-3" >
-    <input type="number" value={contactNumber} name="contactNumber" onChange={handleInputChange} className="form-control" id="inputPassword" />
+    <input type="number" name="contactNumber"  className="form-control" id="inputPassword" />
     </div>
   </div>
 

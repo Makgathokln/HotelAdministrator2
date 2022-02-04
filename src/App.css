@@ -259,9 +259,40 @@ borderWidth: 3; */
 
 .table {
     margin: auto;
- }
+}
 
- .box-container{
-     display: flex;
-     flex-direction: row;
- }
+.box-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.notbox {
+    border-radius: 10px;
+    height: 70px;
+    width: 800px;
+    margin-left: 50px;
+    box-shadow: 0 0 5px #444;
+    margin-top: 20px;
+    flex-direction: row;
+}
+
+.notheader {
+    border-radius: 50px;
+    border-color: antiquewhite;
+    border-bottom: 1px solid #444;
+    border-top: 1px solid #444;
+    border-right: 1px solid #444;
+    border-left: 1px solid #444;
+    border-style: bisque;
+    width: 20px;
+    height: 20px;
+    margin-left: 40px;
+}
+
+.notdetails {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    color: #0B156F;
+    font-weight: 600;
+}

@@ -1,37 +1,44 @@
+
 const notification = [
     {
         id:'1',
         name:'Thapelo Chaba',
-        type:'Executive Suite',
-        checkIn:'15-04-2022',
-        checkOut:'17-04-2022',
-        price:'R6500',
-        roomNo:'Room 1',
-        image:require("../images/flo.jpg")
+
+        subject:'Booking Canceled',
+        time:'10:28',
+       
+
+
+
     },
 
     {
         id:'2',
-        name:'Elizabeth Wayne',
-        type:'Junior Suite',
-        checkIn:' 23-04-2022',
-        checkOut:'24-04-2022',
-        price:'R2100',
-        roomNo:'Room 2',
+        name:'Andries Wayne',
+        subject:'Booking Success',
+        time:'10:28',
+        
 
     },
 
     {
         id:'3',
-        name:'Andries Smith',
-        type:'Standard Suite',
-        checkIn:'23-04-2022',
-        checkOut:'24-04-2022',
-        price:'R6500',
-        roomNo:'Room 15',
+        name:'Elizabeth Smith',
+        subject:'Proof of payment',
+        time:'10:28',
+        
+        
 
-        image:require("../images/flo.jpg")
 
+    },
+
+    {
+        id:'4',
+        name:'Leah Makgatho',
+
+        subject:'Booking Success',
+        time:'10:28',
+        
 
     },
 

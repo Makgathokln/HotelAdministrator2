@@ -36,7 +36,7 @@ marginTop:10,  }} />
     
   
     
-            <table class="table table-bordered" style={{marginLeft:20, width:900, justifyContent:'center', alignContent:'center'}}>
+            {/* <table class="table table-bordered" style={{marginLeft:20, width:900, justifyContent:'center', alignContent:'center'}}>
   <thead>
     <tr>
       <th style={{width:100}}>Name</th>
@@ -65,11 +65,34 @@ marginTop:10,  }} />
     </tr>
      )}
   </tbody>
-</table>
-   
+</table> */}
+     {
+    notification.map((item)=>
+    
+
+            <div className='notbox'>
+                
+                <div className='notheader'>
+                        <h4>T</h4>
+                </div>
+
+                <div className='notdetbox'>
+                <div className='notdetails'>
+                {item.name}
+                <div className='notdetails'>
+                {item.subject}
+                </div>
+                <div className='notdetails'>
+                {item.time}
+                </div>
+                </div>
+                </div>
+            </div>
+                )
+            }
+        </div>
         </div>
 
-        </div>
         </>
     )
 }

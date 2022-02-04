@@ -9,7 +9,7 @@ import { BrowserRouter as
    Router, Routes,
    Link, Route ,
    useHistory,useParams} from "react-router-dom";
-import firebaseDb from '../firebase';
+//import firebaseDb from '../firebase';
 // import firebase from '../firebase';
 
 const Rooms = () => {
